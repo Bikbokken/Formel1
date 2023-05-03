@@ -17,3 +17,7 @@ body {
 .point-card:nth-child(even) {
     background-color: #fff;
 }
+
+.darkcolor {
+    background-color: #15151E;
+}
