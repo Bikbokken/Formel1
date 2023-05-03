@@ -42,6 +42,18 @@ body {
 
 .height {
     height:70px;
+}
+
 .darkcolor {
     background-color: #15151E;
+}
+
+.col {
+    color: #555;
+    transition: .5s;
+}
+
+.col:hover {
+    background-color: #181822;
+    color: #ccc;
 }
