@@ -57,3 +57,22 @@ body {
     background-color: #181822;
     color: #ccc;
 }
+
+
+
+.backeffect::after {
+    background-color: #f59393;
+    width: 148px;
+    height: 199px;
+    display: block;
+    content: "";
+    position: absolute;
+    right: -30px;
+    transform: rotate(30deg);
+    top: -70%;
+    z-index:0;
+}
+
+.z-999 {
+    z-index:999;
+}
