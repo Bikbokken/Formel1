@@ -1,0 +1,19 @@
+.main-font {
+    font-family: 'Space Mono', monospace;
+}
+
+
+.font-weight-900 { 
+    font-weight:900;
+}
+
+
+body {
+    background-color:#EEEEEE;
+}
+
+
+
+.point-card:nth-child(even) {
+    background-color: #fff;
+}
