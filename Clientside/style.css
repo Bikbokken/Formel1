@@ -48,13 +48,13 @@ body {
     background-color: #15151E;
 }
 
-.col {
+.coleffect {
     color: #555;
     transition: .5s;
 }
 
-.col:hover {
-    background-color: #181822;
+.coleffect:hover {
+    background-color: #20202a;
     color: #ccc;
 }
 
@@ -76,3 +76,26 @@ body {
 .z-999 {
     z-index:999;
 }
+
+.coleffectborder {
+    border-left: 1px solid #555;
+    border-right: 1px solid #555;
+}
+
+  ::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px lightgray; 
+    border-radius: 10px;
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: red; 
+    border-radius: 10px;
+  }
+    ::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+  }
