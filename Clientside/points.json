@@ -3,71 +3,73 @@
         "name": "Fernando Alonso",
         "score": 15,
         "team": "Aston Martin",
-        "logo": "aston.png"
+        "logo": "aston.png",
+        "flag": "spain.png"
     },
     {
         "name": "Sergio Perez",
         "score": 12,
         "team": "Redbull",
-        "logo": "redbull.png"
-
+        "logo": "redbull.png",
+        "flag": "mexico.png"
     },
     {
         "name": "Carlos sainz Jr.",
         "score": 10,
         "team": "Ferrari",
-        "logo": "ferrari.png"
-
+        "logo": "ferrari.png",
+        "flag": "spain.png"
     },
     {
         "name": "Max Verstappen",
         "score": 25,
         "team": "Redbull",
-        "logo": "redbull.png"
-
+        "logo": "redbull.png",
+        "flag": "netherlands.png"
     },
     {
         "name": "Lance Stroll",
         "score": 8,
         "team": "Aston Martin",
-        "logo": "aston.png"
-
+        "logo": "aston.png",
+        "flag": "canada.png"
     },
     {
         "name": "Lewis Haimlton",
         "score": 6,
         "team": "Mercedes AMG",
-        "logo": "amg.png"
-
+        "logo": "amg.png",
+        "flag": "england.png"
     },
     {
         "name": "Charles Leclerc",
         "score": 18,
         "team": "Ferrari",
-        "logo": "ferrari.png"
+        "logo": "ferrari.png",
+        "flag": "monaco.png"
 
     },
     {
         "name": "George Rusell",
         "score": 4,
         "team": "Mercedes AMG",
-        "logo": "amg.png"
+        "logo": "amg.png",
+        "flag": "england.png"
 
     },
     {
         "name": "Kevin Magnussen",
         "score": 2,
         "team": "Haas",
-        "logo": "haas.png"
-
+        "logo": "haas.png",
+        "flag": "denmark.png"
     },
     {
         "name": "Lando Norris",
         "score": 1,
         "team": "McLaren",
-        "logo": "mclaren.png"
-        
-
+        "logo": "mclaren.png",
+        "flag": "england.png"
     }
 ]
 

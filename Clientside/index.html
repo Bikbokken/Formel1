@@ -34,45 +34,38 @@
   </div>
 
   <div class="container-fluid bg-light text-dark text-center">
-    <div class="row border-top border-secondary">
-      <div class="col-sm-6 border-end border-secondary">
+    <div class="row border-top border-secondary p-4">
+      <div class="col-sm-6 ">
         <iframe width="640" height="320" src="https://www.youtube.com/embed/L2cz6Yl1Lxo"
          title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
          allowfullscreen></iframe>
       </div>
-      <div class="col-sm-6 border-end border-secondary align-items-center">
-        <div class="d-flex align-items-center h-100 justify-content-center">Here you see the highlights from the race in Baku Azerbaijan</div>
+      <div class="col-sm-6 align-items-center">
+        <div class="d-flex align-items-center h-100 justify-content-center">I de seneste år har F1 gjort et stort spring ind i gamingindustrien ved at samarbejde med spiludviklere og skabe F1-spil. Disse spil giver fans mulighed for at opleve spændingen ved F1-løb på deres computerskærm eller konsol, og det giver dem også mulighed for at føle sig som en del af F1-verdenen.</div>
 
       </div>
     </div>
-  </div>
+    <div class="row border-top border-secondary bg-color text-white p-4">
+      <div class="col-sm-6 align-items-center">
+        <div class="d-flex align-items-center h-100 justify-content-center">
+          Tv2 Echo har netop lavet et spændende indslag om Frederik, en ung dansk racerkører med en stor passion for Formel 1. Frederik har en drøm om at blive verdensmester i F1, og indslaget følger hans rejse mod at nå dette mål.</div>
+      </div>
 
-  <div class="container-fluid bg-color text-light text-center">
-    <div class="row border-top border-secondary">
-
-        <div class="col-sm-6 border-end border-secondary align-items-center">
-          <div class="d-flex align-items-center h-100 justify-content-center">Here is the beginners guide to Formula 1:</div>
-        </div>
-  
-      <div class="col-sm-6 border-end border-secondary">
+      <div class="col-sm-6">
         <iframe width="640" height="320" src="https://www.youtube.com/embed/mQLxQurDwlQ"
          title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
          allowfullscreen></iframe>
       </div>
     </div>
-  </div>
+  <div class="row border-top border-secondary p-4">
+    <div class="col-sm-6">
+      <iframe width="640" height="320" src="https://www.youtube.com/embed/pBlEwTuXM4c"
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+    </div>
 
-  <div class="container-fluid bg-light text-dark text-center">
-    <div class="row border-top border-secondary">
-      <div class="col-sm-6 border-end border-secondary">
-        <iframe width="640" height="320" src="https://www.youtube.com/embed/pBlEwTuXM4c"
-         title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-         allowfullscreen></iframe>
-      </div>
-
-      <div class="col-sm-6 border-end border-secondary align-items-center">
-        <div class="d-flex align-items-center h-100 justify-content-center">Do want to know how the pointsystem work? Watch Here!</div>
-      </div>
+    <div class="col-sm-6 align-items-center">
+      <div class="d-flex align-items-center h-100 justify-content-center">Crashes er en uundgåelig del af motorsport, og Formel 1 er ingen undtagelse. Selvom sikkerheden i F1 er blevet forbedret markant i de seneste år, kan der stadig ske alvorlige ulykker, når bilerne kører op mod 350 km/t.</div>
     </div>
   </div>
 
@@ -93,7 +86,7 @@
   <script>
 
     async function getPoints() {
-		return await fetch("http://localhost/Formel1/Clientside/test.json")
+		return await fetch("points.json")
 			.then((response) => response.json())
 			.then((data) => {return data})
     }
@@ -153,6 +146,7 @@
 					<div class="col-md-6">
 						<div class="d-flex align-items-end gap-2">
 						<h3 class="main-font font-weight-900 mb-0 text-uppercase">${score.name}</h3>
+            <img src="img/flags/${score.flag}" style="height:30px">
 						<p class="main-font mb-0 font-weight-600 ">${score.team}</p>
 						</div>
 					</div>
