@@ -173,7 +173,7 @@
   <script>
 
     async function getPoints() {
-		return await fetch("http://127.0.0.1/Formel1/Clientside/test.json")
+		return await fetch("test.json")
 			.then((response) => response.json())
 			.then((data) => {return data})
     }
@@ -228,7 +228,7 @@
 				<div class="px-2 pt-2 pb-2">
 					<div class="row align-items-center position-relative height">
 					<div class="col-md-1 text-center">
-						<img src="img/redbull.png" class="img-fluid">
+						<img src="img/${score.logo}" class="img-fluid">
 					</div>
 					<div class="col-md-6">
 						<div class="d-flex align-items-end gap-2">
