@@ -1,7 +1,11 @@
 .main-font {
-    font-family: 'Space Mono', monospace;
+    font-family: 'IBM Plex Mono', monospace;
 }
 
+
+.font-weight-600 {
+    font-weight:600;
+}
 
 .font-weight-900 { 
     font-weight:900;
@@ -18,6 +22,120 @@ body {
     background-color: #fff;
 }
 
+.point-card:nth-child(odd) {
+    background-color: #ebe8e8;
+}
+
+
+
+.height-50px {
+    height:50px;
+}
+
+.top-1p {
+    top:1%;
+}
+
+.transform {
+    transform:translate(-50%, -50%);
+}
+
+.height {
+    height:70px;
+}
+
 .darkcolor {
     background-color: #15151E;
+}
+
+.coleffect {
+    color: #555;
+    transition: .5s;
+}
+
+.coleffect:hover {
+    background-color: #20202a;
+    color: #ccc;
+}
+
+
+
+.backeffect::after {
+    background-color: #E10600;
+    width: 148px;
+    height: 199px;
+    display: block;
+    content: "";
+    position: absolute;
+    right: -30px;
+    transform: rotate(30deg);
+    top: -70%;
+    z-index:0;
+}
+
+.z-999 {
+    z-index:999;
+}
+
+.coleffectborder {
+    border-left: 1px solid #555;
+    border-right: 1px solid #555;
+}
+
+  ::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px lightgray; 
+    border-radius: 10px;
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: red; 
+    border-radius: 10px;
+  }
+    ::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+  }
+
+  
+@media only screen and (max-width: 990px) {
+    .formel-car {
+        display:none;
+    }
+
+    .height {
+        height:unset;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .formel-text {
+        color:black !important;
+    }
+}
+  
+  .formel-text {
+    color:white;
+  }
+
+
+  .header {
+    font-size:70px;
+    font-weight:bold;
+
+  }
+
+  .header-img {
+    background-image:linear-gradient(to bottom, rgba(244, 49, 43, 0.70), rgba(244, 49, 43, 0.75), #EEEEEE),url("https://media.formula1.com/image/upload/content/dam/fom-website/manual/Misc/2022manual/LasVegas/F1PosterVegas_Landscape.jpg");
+  }
+
+  .txt-shadow {
+    text-shadow: 1px 2px rgba(221, 217, 217, 0.933);
+  }
+
+.f1-logo {
+    width:15%;
 }
