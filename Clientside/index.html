@@ -173,7 +173,11 @@
   <script>
 
     async function getPoints() {
+<<<<<<< Updated upstream
 		return await fetch("test.json")
+=======
+		return await fetch("http://localhost/Formel1/Clientside/test.json")
+>>>>>>> Stashed changes
 			.then((response) => response.json())
 			.then((data) => {return data})
     }
