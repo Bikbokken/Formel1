@@ -1,43 +1,61 @@
 [
     {
-        "name": "your mom",
+        "name": "Fernando Alonso",
+        "score": 15,
+        "team": "Aston Martin"
+    },
+    {
+        "name": "Sergio Perez",
+        "score": 12,
+        "team": "Redbull"
+
+    },
+    {
+        "name": "Carlos sainz Jr.",
         "score": 10,
-        "team": "Redbull"
+        "team": "Ferrari"
+
     },
     {
-        "name": "du ser sej",
-        "score": 9,
+        "name": "Max Verstappen",
+        "score": 25,
         "team": "Redbull"
 
     },
     {
-        "name": "du ser sej",
+        "name": "Lance Stroll",
         "score": 8,
-        "team": "Redbull"
+        "team": "Aston Martin"
 
     },
     {
-        "name": "du ser sej",
-        "score": 22,
-        "team": "Redbull"
-
-    },
-    {
-        "name": "du ser sej",
+        "name": "Lewis Haimlton",
         "score": 6,
-        "team": "Redbull"
+        "team": "Mercedes AMG"
 
     },
     {
-        "name": "du ser sej",
+        "name": "Charles Leclerc",
+        "score": 18,
+        "team": "Ferrari"
+
+    },
+    {
+        "name": "George Rusell",
+        "score": 4,
+        "team": "Mercedes AMG"
+
+    },
+    {
+        "name": "Kevin Magnussen",
         "score": 2,
-        "team": "Redbull"
+        "team": "Haas"
 
     },
     {
-        "name": "du ser sej",
-        "score": 11,
-        "team": "Redbull"
+        "name": "Lando Norris",
+        "score": 1,
+        "team": "McLaren"
 
     }
 ]
