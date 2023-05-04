@@ -3,7 +3,7 @@
         "name": "Fernando Alonso",
         "score": 15,
         "team": "Aston Martin",
-        "logo": ""
+        "logo": "aston.png"
     },
     {
         "name": "Sergio Perez",
@@ -30,14 +30,14 @@
         "name": "Lance Stroll",
         "score": 8,
         "team": "Aston Martin",
-        "logo": ""
+        "logo": "aston.png"
 
     },
     {
         "name": "Lewis Haimlton",
         "score": 6,
         "team": "Mercedes AMG",
-        "logo": ""
+        "logo": "amg.png"
 
     },
     {
@@ -51,21 +51,21 @@
         "name": "George Rusell",
         "score": 4,
         "team": "Mercedes AMG",
-        "logo": ""
+        "logo": "amg.png"
 
     },
     {
         "name": "Kevin Magnussen",
         "score": 2,
         "team": "Haas",
-        "logo": ""
+        "logo": "haas.png"
 
     },
     {
         "name": "Lando Norris",
         "score": 1,
         "team": "McLaren",
-        "logo": ""
+        "logo": "mclaren.png"
         
 
     }
