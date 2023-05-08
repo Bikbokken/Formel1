@@ -21,17 +21,13 @@
 
     <div class="container z-3  position-relative shadow-sm">
       <div class="row pointList">
-		</div>
+      </div>
+    </div>	
 
-    
-	</div>	
-
-  <div class="container-fluid mt-5">
-    <div id="myData" class="row align-items-center flex-row flex-nowrap overflow-x-auto">
-  
-  
+    <div class="container-fluid mt-5">
+      <div id="myData" class="row align-items-center flex-row flex-nowrap overflow-x-auto">
+      </div>
     </div>
-  </div>
 
   <div class="container-fluid main-bg">
     <div class="row p-4">
@@ -126,27 +122,27 @@
 
   <script>
 
-    async function getPoints() {
-		return await fetch("http://127.0.0.1:8000/points")
-			.then((response) => response.json())
-			.then((data) => {return data["data"]})
+    async function getPoints() { 
+      return await fetch("http://127.0.0.1:8000/points") // Fetching the points from the JSON feed
+        .then((response) => response.json())
+        .then((data) => {return data["data"]}) 
     }
 
 
-	const minLeft = 42;
-	const maxLeft = 82;
-	const numberOfPositions = 10;
+	const minLeft = 42; // The minimum pixels (max left) in the cards
+	const maxLeft = 82; // tHe maximum pixels (max right) in the cards
+	const numberOfPositions = 10; // Top ??? 
 
-	const pointList = document.querySelector(".pointList");
+	const pointList = document.querySelector(".pointList"); // Get the point list
 
 
-	function getCarPosition(position, highestScore) {
+	function getCarPosition(position, highestScore) { //Calculate the pixels the car should be using the position and the highest score
 		const difference = maxLeft - minLeft;
 		const incrementBy = difference / highestScore;
 		return minLeft + incrementBy * position;
 	}
 
-	function getHighestScore(json) {
+	function getHighestScore(json) { // Get the highest score in the JSON object
 		let highestNumber = 0;
 		json.forEach(x=> {
 			if(x["score"] > highestNumber) {
@@ -157,16 +153,15 @@
 	}
 
 
-	// 42-82
 
 	const timer = ms => new Promise(res => setTimeout(res, ms))
 	async function makeCarAnimation() {
-		const cars = document.querySelectorAll("img[data-left]")
-		cars.forEach(async function(ele, index) {
-			let dataLeft = ele.attributes["data-left"]["value"];
-			for(let i = minLeft; i < parseInt(dataLeft.replace("%", "")); i++) {
+		const cars = document.querySelectorAll("img[data-left]") // Get all the cards
+		cars.forEach(async function(ele, index) { // Loop through them
+			let dataLeft = ele.attributes["data-left"]["value"]; // Get the data-left attribute
+			for(let i = minLeft; i < parseInt(dataLeft.replace("%", "")); i++) { // Loop through every number from minimum (max-left) to the pixels it should be
 				ele.style.left = i+ "%"
-				await timer(10);
+				await timer(10); // wait 10 ms. 
 			}
 		});
 	}
@@ -201,19 +196,19 @@
 				</div>
 				</div>
 			`;
-		});
-		data = data.join("");
-		pointList.innerHTML = data
+		}); // Create elements for every car
+		data = data.join(""); // join them together 
+		pointList.innerHTML = data // Set the innerhtml to the joined elements
 
 	}
 
 
 
 	function sortJson(json) {
-		return json.sort(function(a, b) {return a.score - b.score}).reverse();
+		return json.sort(function(a, b) {return a.score - b.score}).reverse(); // Sort the json, so it's the highest score first.
 	}
 
-	(async function() {
+	(async function() { // Run the page as async
 		let json = await getPoints();
 		let sortedJson = sortJson(json);
 		await handleJson(sortedJson);
