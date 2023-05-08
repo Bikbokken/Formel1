@@ -86,9 +86,9 @@
   <script>
 
     async function getPoints() {
-		return await fetch("points.json")
+		return await fetch("http://127.0.0.1:8000/points")
 			.then((response) => response.json())
-			.then((data) => {return data})
+			.then((data) => {return data["data"]})
     }
 
 
