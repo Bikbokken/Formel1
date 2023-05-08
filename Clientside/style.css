@@ -16,7 +16,9 @@ body {
     background-color:#EEEEEE;
 }
 
-
+.main-bg {
+  background-color:#EEEEEE;
+}
 
 .point-card:nth-child(even) {
     background-color: #fff;
